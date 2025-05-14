@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">E-commerce</div>
+    <div class="cart">
+      <button id="cart-btn">🛒 Cart (0)</button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="products">
+      <h2>Products</h2>
+      <div class="product-list">
+        <!-- Product items will be dynamically added by JavaScript -->
+      </div>
+    </section>
+    
+    <section class="cart-popup" id="cart-popup">
+      <div class="cart-popup-content">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <div class="total-price">
+          Total: $<span id="total-price">0.00</span>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <button id="close-cart-btn">Close</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
